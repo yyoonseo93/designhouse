@@ -44,6 +44,13 @@
 .container-3{
     width: 80%;
     margin: 0 auto;
+    margin-bottom: 10%;
+}
+.container-3::after{
+    content:''; clear: both; display: block;
+    border-bottom: 2px solid rgb(214,214,214);
+    width: 60%; margin: 0 auto;
+    margin-top:10%;
 }
 .container-3 ul{
     display: flex;
@@ -79,6 +86,7 @@
     align-items: center;
     padding: 10%;
     opacity: 0;
+    color: rgb(80, 80, 80);
 }
 .container-3 ul li:nth-of-type(2) p{
     opacity: 1;
