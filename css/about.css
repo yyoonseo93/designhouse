@@ -1,0 +1,91 @@
+
+@charset 'utf-8';
+@import url('common.css');
+
+
+.container-1{
+    width: 100%; height: 300px;
+    overflow: hidden;
+    margin: 68px auto;
+    position: relative;
+}
+.container-1 img{width: 100%}
+.container-1 p{
+    position: absolute;
+    left: 0; top: 0;
+    color: #fff;
+    font-size: 2em;
+
+    background-color: rgba(0,0,0,0.7);
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* container-2 */
+.container-2::before{
+    content:''; clear: both; display: block;
+    border-bottom: 2px solid rgb(214, 214, 214);
+    width: 20%; margin:0 auto;
+    margin-bottom: 5%;
+}
+.container-2{
+    width: 80%;
+    margin:10% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-2 h2{
+    font-size:10em;
+    color: rgb(214, 214, 214);
+    margin: 0 auto;
+    margin-bottom: 6%;
+}
+.container-2 img{
+    width:50%;height: 50%;
+}
+.container-2 p{
+    width: 40%;
+    color: rgb(70,60,60);
+    line-height: 1.8;
+    word-break: keep-all;
+}
+.container-2 p strong{
+    display: block;
+    color: rgb(240,202,15);
+    font-size: 1.8em;
+    margin-bottom:5px;
+}
+
+/* container-3 */
+.container-3::before{
+    content: ''; clear:both; display: block;
+    margin: 0 auto;
+    border-top: 1px solid rgb(214, 214, 214);
+    width:100%;
+}
+.container-3{
+    width: 80%;
+    margin: 0 auto;
+}
+.container-3 h2{
+    color: rgb(240,202,15);
+    font-size: 1.8em;
+    text-align: center;
+    margin:5%;
+}
+.container-3 ul{padding: 0;}
+.container-3 ul li{
+}
+.container-3 ul li p{
+    color: rgb(70,60,60);
+    line-height: 2;
+    word-break: keep-all;
+}
+.container-3 ul li p strong{
+    color: rgb(70,60,60);
+    font-size: 1.3em;
+}
