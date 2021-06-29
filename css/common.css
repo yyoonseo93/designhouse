@@ -194,7 +194,7 @@ footer {
 
 /* media header */
 
-@media(max-width: 767px){
+@media(min-width: 360px) and (max-width: 767px){
     header{
         position: fixed;
         top:0; left:0;
@@ -324,7 +324,7 @@ footer {
 }
 
 /* media footer */
-@media(max-width: 767px){
+@media(min-width: 360px) and (max-width: 767px){
     footer {
         display: block;
         justify-content: none;
