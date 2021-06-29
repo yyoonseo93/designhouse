@@ -49,6 +49,7 @@
 .container-2 ul li .main-text p {
     color: rgb(124, 124, 124);
     text-align: center;
+    word-break: keep-all;
 }
 .container-2 ul li{
     padding-bottom: 10%;
@@ -61,6 +62,7 @@
     padding-bottom: 30px;
 }
 .container-2 ul li p{
+    font-size:1em;
     color: rgb(70,60,60);
     line-height:1.8;
     word-break: keep-all;
@@ -79,18 +81,100 @@
 /* container-3 */
 .container-3{
     position: fixed;
-    right: 10%; bottom: 5%;
-    z-index: 20;
-}
-.container-3 p{
-    background-color: rgb(240,202,15);
-    width: 60px; height: 60px;
-    border-radius: 30px;
-    padding:8px;
+    right: 5%; bottom:5%;
+    z-index:999;
+    text-align: center;
 
 }
-.container-3 p strong{
-    color: #fff;
-    text-align: center;
-    font-size: 1.4em;
+.container-3 a{
+    position: absolute;
+    right: 0; bottom: 0;
+    background-color: #fff;
+    border: 3px solid rgb(240,202,15);
+    width:60px; height:60px;
+    font-size: 0;
+    border-radius:30px;
 }
+.container-3 img{
+    width:60%; height:60%;
+    transform: rotate(90deg);
+    margin:6px;
+}
+
+
+/* media container-1 */
+
+@media(min-width: 360px) and (max-width:767px){
+    .container-1{
+        width: 100%; height: 150px;
+        margin: 117px 0 60px 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .container-1 p{
+        position: absolute;
+        left: 0; top: 0;
+        color: #fff;
+        font-size:1.4em;
+        z-index: 10;
+    
+        background-color: rgba(0,0,0,0.7);
+        width: 100%; height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-1 span{
+        font-size: 0.2em;
+        position: absolute;
+        right:5%; bottom:10%;
+        color: #eee;
+        z-index: 10;
+    }
+}
+
+/* media container-2 */
+
+@media(min-width: 360px) and (max-width:767px){
+    .container-2{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-2 ul li .main-text p {
+        color: rgb(124, 124, 124);
+        text-align: center;
+        font-size:0.7em;
+    }
+    .container-2 ul li{
+        padding-bottom: 10%;
+        width:90%;
+        display: block;
+        margin: 0 auto;
+    }
+    .container-2 ul li p{
+        font-size:0.8em;
+        color: rgb(70,60,60);
+        line-height:1.8;
+        word-break: keep-all;
+    }
+    .container-2 ul li p strong{
+        font-size: 1em;
+        color: rgb(240,202,15);
+    }
+}
+
+/* media container-3 */
+
+@media(min-width: 360px) and (max-width:767px){
+    .container-3 a{
+    position: absolute;
+    right: 0; bottom: 0;
+    background-color: #fff;
+    border: 3px solid rgb(240,202,15);
+    width:40px; height:40px;
+    font-size: 0;
+    border-radius:20px;
+    }
+}
+
+
