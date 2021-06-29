@@ -243,6 +243,7 @@ footer {
         transform: rotate(-45deg);
     }
     .head .menu-burg{
+        display: none;
         position: fixed;
         
         left: 10%; top: 0;
