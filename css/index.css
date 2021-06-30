@@ -19,7 +19,7 @@
 .container-1 .main-text{
     background-color: rgba(255,255,255,0.8);
     position: absolute;
-    bottom: 100px; left: 10%;
+    bottom: 50px; left: 10%;
     padding: 30px;
 }
 .container-1 .main-text p{
@@ -29,7 +29,7 @@
 }
 .container-1 .main-text p strong{
     display: block;
-    font-size: 40px;
+    font-size: 2em;
     color: rgb(240,202,15);
     line-height: 2.5;
 }
@@ -59,7 +59,8 @@
     margin-right: 10px;
 }
 .logo{
-    font-size: 25px;
+    font-weight: 600;
+    font-size: 2em;
     text-align: center;
     color: rgb(70,60,60);
     padding: 80px;
@@ -77,24 +78,26 @@
     
 }
 .container-2 .left{
+    width: 50%;
     padding:20px 80px;
     text-align: right;
 }
 .container-2 .left h2{
-    font-family:'Open Sans',sans-serif;
-    font-weight: 800;
-    font-size: 160px;
     color: rgb(240,202,15);
-    opacity:30%;
+    opacity:40%;
+}
+.container-2 .left h2 strong{
+    font-weight: 800;
+    font-size:6em;
 }
 .container-2 .left p{
     color: rgb(97,88,86);
-    margin: 50px 0;
-    font-size: 18px;
+    margin: 40px 0 25px 0;
+    font-size: 1.2em;
     line-height: 1.5;
 }
 .container-2 .left p strong{
-    font-size: 20px;
+    font-size: 1.2em;
     display: block;
     margin-bottom: 30px;
 }
@@ -119,22 +122,21 @@
     font-size: 0;
 }
 .container-2 .left div img{
-    width: 50px; height: 80px;
+    width: 50px; height: 60px;
 }
 
 .container-2 .right{
-    width: 50%; height: 100%;
-
+    width:50%;
 }
 .container-2 .right figure{
-    display: flex;
     height: 100%;
+    display: flex;
     align-items: center;
     overflow: hidden;
 }
 .container-2 .right a{
-    width: 50%;
-    margin:0 20px;
+    width: 55%;
+    margin-right: 20px;
     flex-shrink: 0;
 }
 .container-2 .right a img{
@@ -146,32 +148,31 @@
     font-size: 0;
 }
 .container-2 .right p img{
-    width: 50px; height: 80px;
+    width: 50px; height: 60px;
 }
 
 /* container-3 */
 
 .container-3{
     background-color: rgb(240,202,15);
-    width: 90%; height: 350px;
+    width: 90%; height: 320px;
     margin-top:500px;
     position: relative;
 }
 .container-3 h2{
     position: absolute;
-    left:10%; bottom:50%;
+    left:7%; bottom:47%;
     transform: rotate(-90deg) translateY(100%);
     transform-origin: 0 100%;
 }
 .container-3 h2 strong{
-    font-family:'Open Sans',sans-serif;
     font-weight: 800;
-    font-size: 160px;
+    font-size:7em;
     color: rgb(242,240,230);
 }
 .container-3 ul{
     width: 60%; height:600px;
-    left: 25%; bottom: 15%;
+    left: 23%; bottom: 13%;
     position: absolute;
     margin: 0; padding:0;
 }
@@ -183,19 +184,34 @@
     float: left;
 }
 .container-3 ul li:nth-of-type(1){
-    width: 50%; height: 100%;
+    width: 60%; height: 100%;
 }
 .container-3 ul li:nth-of-type(2),
 .container-3 ul li:nth-of-type(3){
-    width: 48%; height: 14vw;
+    width: 38%; height: 14vw;
     margin: 0 0 2% 2%;
 }
 .container-3 ul li a img{width: 100%;}
-.container-3 ul li:nth-of-type(1) a img{height: 100%;}
+
+.container-3 .sub-circle{
+    display: flex;
+    position: absolute;
+    right:17%; bottom:47%;
+
+}
+.container-3 .sub-circle p{
+    background-color:rgb(212, 212, 212);
+    width: 10px; height: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 0;
+}
+.container-3 .sub-circle p:nth-of-type(2){
+    background-color:#fff;}
 
 .container-3 span{
     position: absolute;
-    right:15%; bottom:18%;
+    right:17%; bottom:15%;
 }
 .container-3 span a strong{
     color: #fff;
@@ -213,37 +229,24 @@
     margin-left: 20px;
 }
 
-.container-3 .sub-circle{
-    display: flex;
-    position: absolute;
-    right:15%; bottom:50%;
 
-}
-.container-3 .sub-circle p{
-    background-color:rgb(212, 212, 212);
-    width: 10px; height: 10px;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 0;
-}
-.container-3 .sub-circle p:nth-of-type(2){
-    background-color:#fff;}
 
 /* container-4 */
 
 .container-4{
     width: 80%; height: 700px;
-    margin: 200px auto;
+    margin: 150px auto;
 }
 .container-4 div{text-align: end;}
 .container-4 div h2{
-    font-family:'Open Sans',sans-serif;
-    font-weight: 800;
-    font-size: 160px;
     display:block;
     color: rgb(240,202,15);
-    opacity:30%;
+    opacity:40%;
     padding-bottom: 10px;
+}
+.container-4 div h2 strong{
+    font-size:6em;
+    font-weight: 800;
 }
 .container-4 div a strong{
     color: #fff;
@@ -261,9 +264,9 @@
     margin-left: 20px;
 }
 .container-4 ul{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 55%;
     overflow: hidden;
     padding: 0;
     margin-top: 15px;
@@ -273,14 +276,13 @@
     margin-left: 30px;
     position: relative;
 }
-.container-4 ul li a{}
 .container-4 ul li a img{width: 100%;}
 .container-4 ul li:nth-child(1){margin-left: 0;}
 .container-4 ul li p{
     position: absolute;
     right: 0; bottom: 0;
     width: 15%; height: 15%;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     z-index: 10;
 
     display: flex;
@@ -290,7 +292,7 @@
 }
 .container-4 ul li p a{
     font-size: 3em;
-    color: rgb(70,60,60);
+    color: rgb(240,202,15);
 }
 .container-4 ul li:hover p{
     opacity: 1;
@@ -298,10 +300,10 @@
 /* footer */
 
 
-/* container-1 */
+/* media container-1 */
 @media(min-width: 360px) and (max-width: 767px){
     .container-1{
-        width: 100%; height:161px;
+        width: 100%; height:160px;
         overflow: hidden;
         margin: 117px 0 0 0;
         position: relative;
@@ -314,12 +316,12 @@
     }
     .container-1 .main-text p{
         color: rgb(70,60,60);
-        font-size: 10px;
+        font-size: 0.4em;
         line-height: 1.8;
     }
     .container-1 .main-text p strong{
         display: block;
-        font-size: 15px;
+        font-size:2em;
         color: rgb(240,202,15);
         line-height: 2;
     }
@@ -329,14 +331,14 @@
     }
     .container-1 .main-circle p{
         background-color: #fff;
-        width: 6px; height: 6px;
-        border-radius: 3px;
+        width: 4px; height: 4px;
+        border-radius: 2px;
         font-size:0; 
         margin:5px;
     }
     .container-1 .main-circle p:nth-of-type(2){
         background-color: rgb(240,202,15);
-        width:6px; height:50px;
+        width:4px; height:50px;
     }
 
     .logo::before{
@@ -347,7 +349,8 @@
         margin-right: 10px;
     }
     .logo{
-        font-size: 15px;
+        font-weight: 600;
+        font-size: 1.2em;
         text-align: center;
         color: rgb(70,60,60);
         padding: 20px;
@@ -356,12 +359,12 @@
     }
 }
 
-/* container-2 */
+/* media container-2 */
 
 @media(min-width: 360px) and (max-width: 767px){
     .container-2{
         background-color: rgb(242, 240, 240);
-        width:100%; height:600px;
+        width:100%; height:500px;
         display: block;
         justify-content: none;
         margin-left:0;
@@ -369,27 +372,29 @@
         
     }
     .container-2 .left{
-        padding:0;
-        margin: 0;
+        width:100%;
+        padding:0 5%;
         text-align:left;
     }
     .container-2 .left h2{
-        font-size:80px;
         color: rgb(240,202,15);
-        opacity:30%;
+        opacity:40%;
         margin-left: 5%;
+    }
+    .container-2 .left h2 strong{
+        font-weight: 800;
+        font-size:3em;
     }
     .container-2 .left p{
         color: rgb(97,88,86);
-        margin: 4% 7%;
-        font-size: 12px;
+        margin: 0 0 3% 7%;
+        font-size: 0.5em;
         line-height: 1.5;
-        margin-bottom:2%;
     }
     .container-2 .left p strong{
-        font-size: 14px;
+        font-size:2em;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom:10px;
     }
     .container-2 .left span a{
         color: #fff;
@@ -397,7 +402,7 @@
         background-color: rgb(240,202,15);
         padding:4px 10px;
         border-radius:20px;
-        margin-left: 7%;
+        margin: 0 0 0 7%;
     }
     .container-2 .left span a::after{
         content:''; clear: both; display:inline-block;
@@ -412,18 +417,14 @@
         position: absolute;
         left:5%; top: 50%;
         font-size: 0;
-        z-index: 10;
     }
-    .container-2 .left div img{
-        width: 20px; height: 40px;
-    }
-    
     .container-2 .right{
-        width:100%; height:50%;
+        width:100%;
     }
     .container-2 .right figure{
         display: flex;
-        height: 50%;
+        height:50%;
+        justify-content: center;
         align-items: center;
         overflow: hidden;
 
@@ -441,9 +442,6 @@
         right:8%; top:50%;
         font-size: 0;
     }
-    .container-2 .right p img{
-        width: 20px; height:40px;
-    }
 }
 
 /* container-3 */
@@ -451,7 +449,7 @@
 @media(min-width: 360px) and (max-width: 767px){
     .container-3{
         background-color: rgb(240,202,15);
-        width:100%; height:250px;
+        width:100%; height:200px;
         margin-top:300px;
         position: relative;
     }
@@ -462,31 +460,28 @@
         transform-origin: none;
     }
     .container-3 h2 strong{
-        font-size:80px;
+        font-weight: 800;
+        font-size:3.2em;
         color: rgb(242,240,230);
     }
     .container-3 ul{
-        width:100%; height:300px;
+        width:90%; height:250px;
         left: 0; bottom:70%;
         position: absolute;
-        margin:0 0 0 5%; padding:0;
-    }
-    .container-3 ul li{
-        overflow: hidden;
-        float:left;
+        margin:0 5%; padding:0;
     }
     .container-3 ul li:nth-of-type(1){
-        width: 55%; height: 100%;
+        width: 60%; height: 100%;
     }
     .container-3 ul li:nth-of-type(2),
     .container-3 ul li:nth-of-type(3){
-        width: 35%; height:40vw;
-        margin: 0 0 3% 2%;
+        width: 38%; height:30vw;
+        margin: 0 0 2% 2%;
     }
     .container-3 .sub-circle{
         display: flex;
         position: absolute;
-        right:5%; bottom:60%;
+        right:5%; bottom:70%;
     }
     .container-3 .sub-circle p{
         background-color:rgb(212, 212, 212);
@@ -497,7 +492,7 @@
     }
     .container-3 span{
         position: absolute;
-        right:5%; bottom:50%;
+        left:5%; bottom:55%;
     }
     .container-3 span a strong{
         color: #fff;
@@ -516,24 +511,25 @@
     }
 
 }
-/* container-4 */
+/* media container-4 */
 
 @media(min-width: 360px) and (max-width: 767px){
     .container-4{
         width:100%; height:400px;
-        margin:150px 0;
+        margin:150px auto;
     }
     .container-4 div{
         text-align: center;
     }
     .container-4 div h2{
-        font-family:'Open Sans',sans-serif;
-        font-weight: 800;
-        font-size:70px;
         display:block;
         color: rgb(240,202,15);
-        opacity:30%;
-        padding-bottom:0;
+        opacity:40%;
+        padding-bottom:5px;
+    }
+    .container-4 div h2 strong{
+        font-size:3em;
+        font-weight: 800;
     }
     .container-4 div a strong{
         color: #fff;
@@ -551,13 +547,12 @@
         margin-left: 10px;
     }
     .container-4 ul{
+        width: 100%;
         display: flex;
         justify-content: center;
-        height: 70%;
         overflow: hidden;
         padding: 0;
-        margin-top:10%;
-        
+        margin-top:30px;
     }
     .container-4 ul li{
         width:70%;
