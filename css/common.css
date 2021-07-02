@@ -233,6 +233,14 @@ footer {
 /* media header */
 
 @media(min-width: 360px) and (max-width: 767px){
+    header{
+        position: fixed;
+        top:0; left:0;
+        padding: 18px 0 0 0;
+        width:100%;
+        background-color: #fff;
+        z-index: 999;
+    }
     .head{
         width: 100%; margin:0;
         display:block;
@@ -266,7 +274,7 @@ footer {
     .head nav{
         background-color: rgb(240,202,15);
         width: 100%;
-        margin: 2vw 0;
+        margin: 2vw 0 0 0;
         text-align: center;
     }
     .head nav a{

@@ -3,6 +3,7 @@
 
 
 /* container-1 */
+
 /* container-2 */
 .container-2::before{
     content: ''; clear: both; display: block;
@@ -66,6 +67,9 @@
 /* media container-1 */
 
 @media(min-width: 360px) and (max-width: 767px){
+    .container-1{
+        margin-top: 80px;
+    }
     .container-1 a img{
         width: 100%;
         transform: translateY(-30%);

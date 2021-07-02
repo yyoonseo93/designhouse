@@ -4,7 +4,9 @@
 
 
 /* container-1 */
-
+.container-1{
+    margin-top: 80px;
+}
 .container-1 a img{
     width: 100%;
     transform: translateY(-40%);

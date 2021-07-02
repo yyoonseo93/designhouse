@@ -92,7 +92,10 @@
     color: #fff;
 }
 
-
+/* container-1 */
+.container-1{
+    margin-top: 80px;
+}
 /* media container-2 */
 
 @media(min-width: 360px) and (max-width: 767px){
