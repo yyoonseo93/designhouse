@@ -245,7 +245,7 @@ footer {
         width: 100%; margin:0;
         display:block;
         justify-content:flex-start;
-        align-content: none;
+        align-content: center;
     }
     .head .logo-menu{
         display: flex;
@@ -324,7 +324,7 @@ footer {
     footer {
         display: block;
         justify-content:flex-start;
-        align-content: none;
+        align-content: center;
         flex-direction: column;
         position: relative;
         left: 0; bottom: 0;
