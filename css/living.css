@@ -96,7 +96,7 @@
     .container-2 ul{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         margin: 0 auto;
         padding: 50px;
     }
