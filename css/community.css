@@ -19,7 +19,7 @@
     padding: 5%;
     margin-top:50px;
 }
-.container-2 p{
+.container-2 h2{
     font-size:1.5em;
     color: #cccab5;
     text-align: center;
@@ -36,6 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    list-style-type: none;
 }
 .container-3 ul li{
     width: 32%;
@@ -75,7 +76,7 @@
 /* media container-2 */
 
 @media(min-width: 360px) and (max-width: 767px){
-    .container-2 p{
+    .container-2 h2{
         font-size:1em;
         color: #cccab5;
         text-align: center;
