@@ -4,13 +4,7 @@
 
 
 /* container-1 */
-.container-1{
-    margin-top: 68px;
-}
-.container-1 a img{
-    width: 100%;
-    transform: translateY(-40%);
-}
+
 /* container-2 */
 
 .container-2{}
@@ -98,7 +92,17 @@
     color: #fff;
 }
 
+/* media container-1 */
 
+@media(min-width: 360px) and (max-width: 767px){
+    .container-1{
+        margin-top: 80px;
+    }
+    .container-1 a img{
+        width: 100%;
+        transform: translateY(-40%);
+    }
+}
 
 /* media container-2 */
 

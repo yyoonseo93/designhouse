@@ -93,8 +93,10 @@
 }
 
 /* container-1 */
-.container-1{
-    margin-top: 68px;
+@media(min-width: 360px) and (max-width: 767px){
+    .container-1{
+        margin-top: 80px;
+    }
 }
 /* media container-2 */
 
