@@ -1,5 +1,4 @@
-
-@charset 'utf-8';
+@charset "utf-8";
 @import url('common.css');
 
 /* container-1 */
@@ -118,7 +117,7 @@
     .container-3 ul{
         display: block;
         flex-wrap: none;
-        justify-content: none;
+        justify-content: flex-start;
         align-content: center;
         overflow: hidden;
         width:100%;

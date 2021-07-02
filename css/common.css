@@ -1,5 +1,4 @@
-
-@charset 'utf-8';
+@charset "utf-8";
 
 * {font-family: 'Open Sans',sans-serif,
     'Noto Sans KR', sans-serif;}
@@ -237,7 +236,7 @@ footer {
     .head{
         width: 100%; margin:0;
         display:block;
-        justify-content: none;
+        justify-content:flex-start;
         align-content: none;
     }
     .head .logo-menu{
@@ -253,7 +252,7 @@ footer {
         width: 70%; height:100%;
         background-color:rgba(255, 255, 255,1);
         display: block;
-        justify-content: none;
+        justify-content:flex-start;
         align-items: none;
         flex-direction: column;
         text-align: left;
@@ -316,7 +315,7 @@ footer {
 @media(min-width: 360px) and (max-width: 767px){
     footer {
         display: block;
-        justify-content: none;
+        justify-content:flex-start;
         align-content: none;
         flex-direction: column;
         position: relative;
