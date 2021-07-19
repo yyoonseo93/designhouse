@@ -19,23 +19,27 @@
     position: absolute;
     width:450px;
     padding: 20px;
-    top:15%; left:10%;
+    top:25%; left:8%;
     word-break: keep-all;
 }
 .container-1 .main-text p{
+    padding: 10px;
     color: #fff;
-    line-height: 1.8;
-    text-shadow: 0.8px 0.8px 1px rgb(100, 100, 100);
+    line-height: 2;
+    text-shadow: 0.8px 0.8px 1px rgb(70, 70, 70);
 }
 .container-1 .main-text p strong{
     display: block;
-    font-size: 2em;
+    font-size: 2.4em;
     line-height: 2;
     color: rgb(240,202,15);
-    border-bottom: 2px solid rgb(240,202,15);
-    text-shadow: 0.8px 0.8px 1px rgb(172, 130, 23);
+    margin-bottom: 10px;
+    text-shadow: 0.8px 0.8px 1px rgb(192, 162, 12);
+    
 }
-.container-1 a img{transform: translateY(-5%);}
+.container-1 a img{transform: translateY(-15%);}
+
+
 /* .container-1 aside{
     position: absolute;
     right: 10%; top:50%;
@@ -78,13 +82,14 @@
     width: 90%; height: 600px;
     display: flex;
     flex-shrink: 0;
-    justify-content: center;
     margin-left: 10%;
     position: relative;
 }
 .container-2 div{
-    width: 100%; height: 550px;
-    margin: 0 50px; padding: 30px;
+    width: 100%; height: 500px;
+    margin: 50px; padding: 20px;
+    overflow: hidden;
+    
 }
 .container-2 h2 strong{
     color: rgb(240,202,15);
@@ -92,14 +97,17 @@
     font-weight: 800;
     font-size:6em;
     display: inline-block;
+    text-align: end;
     
 }
 .container-2 p{
     color: rgb(97,88,86);
-    margin: 40px 0 25px 20px;
+    padding: 20px;
+    margin-left:80px;
     font-size: 1.2em;
     line-height: 1.5;
     display: inline-block;
+    text-align: end;
 }
 .container-2 p strong{
     font-size: 1.2em;
@@ -108,7 +116,7 @@
 }
 .container-2 span{
     position: absolute;
-    left:4%; bottom:10%;
+    left:24%; bottom:10%;
 }
 .container-2 span a{
     color: #fff;
@@ -126,10 +134,11 @@
     margin-left:20px;
 }
 .container-2 a img{
-    position: absolute;
-    right:8%; top: 15%;
     width:40%;
 }
+
+/* 
+
 .sub-icon .sub1 div{
     position: absolute;
     left:2%; top: 50%;
@@ -148,7 +157,7 @@
     position: absolute;
     right: 12%; top: 50%;
     font-size: 0;
-}
+} */
 /* container-3 */
 
 .container-3{
