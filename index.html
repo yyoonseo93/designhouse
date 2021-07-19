@@ -21,6 +21,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -80,45 +83,126 @@
 
     <section class="main">
 
-        <div class="container-1">
-            <a href="#"><img src="img/main2.jpg" alt="mainimg"></a>
-            <div class="main-text">
-                <p><strong>Refreshing Scents</strong>
-                진한 장미 향의 ‘레르 뒤 자르댕’ 캔들은 루이 비통.<br>
-                어반 아포케테리의 ‘체리 블로썸’ 캔들은 아키스토어.
-                </p>
+        <div class="container-1 slider">
+            <div class="con-1">
+                <a href="style.html"><img src="img/sub-10-1.jpg" alt="mainimg"></a>
+                <div class="main-text">
+                    <p><strong>Refreshing Scents</strong>
+                        창을 활짝 열어 환기한 다음 산뜻한 분위기를 집 안 가득 들이고 싶다면 주목할 것. 은은한 봄 내음이 기분까지 전환해줄 리프레시 제품을 소개한다. 
+                    </p>
+                </div>
             </div>
-            <div class="main-circle">
-                <p><a href="#">동그라미</a></p>
-                <p><a href="#">동그라미</a></p>
-                <p><a href="#">동그라미</a></p>
-                <p><a href="#">동그라미</a></p>
-                <p><a href="#">동그라미</a></p>
+            <div class="con-2">
+                <a href="living.html"><img src="img/living9-1.jpg" alt="mainimg"></a>
+                <div class="main-text">
+                    <p><strong>Relaxing Brunch</strong>
+                        린다 리 대표는 런던의 유명 한식당 ‘코바Koba’를 시작으로 쇼어디치, 소호 등 런던과 파리에 5개 지점이 있는 ‘온더밥On the Bab’을 통해 오랜 기간 한국 식문화를 알려왔다.
+                    </p>
+                </div>
+            </div>
+            <div class="con-3">
+                <a href="style.html"><img src="img/topmain4.jpg" alt="mainimg"></a>
+                <div class="main-text">
+                    <p><strong>Hand&Body wash</strong>
+                        하루를 마무리하며 따뜻한 물로 온몸을 씻는 것은 맑고 부드러운 피부를 유지하는 좋은 습관이다. 끈적이거나 남는 느낌 없이 전신을 깨끗하게 하는 동시에 감각적인 향을 남기는 핸드 & 보디 워시를 모았다. 
+                    </p>
+                </div>
+            </div>
+            <div class="con-4">
+                <a href="culture.html"><img src="img/culture6-1.jpg" alt="mainimg"></a>
+                <div class="main-text">
+                    <p><strong>WEK BUSAN</strong>
+                        언덕에 올라 바다와 숲의 풍경을 눈에 담기 좋은 달맞이고개에 또 하나의 매력적인 공간이 탄생했다. 지난 12월 문을 연 비아인키노 부산점 ‘WEK BUSAN’은 부산 주민은 물론 관광객들에게 명소가 됐다.
+                    </p>
+                </div>
+            </div>
+            <div class="con-5">
+                <a href="style.html"><img src="img/topmain5.jpg" alt="mainimg"></a>
+                <div class="main-text">
+                    <p><strong>Home Fragrance</strong>
+                        잠시라도 더 머물고 싶은 향기로운 공간, 홈 프레그런스 하나면 가능하다. 기분 전환 효과를 내는 것은 물론 공간의 분위기까지 바꿔주는 캔들, 디퓨저 그리고 룸 스프레이를 모았다. 
+                    </p>
+                </div>
             </div>
         </div>
+            
+        <script type="text/javascript">
+  
+            $(".slider").slick({
+              arrows:false, /*false 화살표 사라짐*/
+              dots: true, /* false 인디게이터 사라짐*/
+              infinite: true,
+              slidesToShow: 1, // 화면에 보여지는 칸 수
+              slidesToScroll: 1, //슬라이드 움직이는 칸 수
+              autoplay:true, //자동슬라이드 _ 마우스올리면 멈춤.
+              autoplayspeed:400,
+              fade: true,
+              cssEase: 'linear'
+            });
+      </script>
 
         <h2 class="logo"><strong>DESIGN HOUSE M+</strong></h2>
 
         <div class="container-2">
-            <div class="left">
+            <div class="sub1 slider">
+                    <h2><strong>LIVING</strong></h2>
+                    <p><strong>FOOD_참치 제철 샐러드</strong>
+                    재료(2인분) 동원참치 아이스큐브 1팩<br>
+                    아스파라거스·방울토마토·금귤·오렌지 적당량<br>
+                    드레싱_올리브유·레몬즙 2큰술
+                    </p>
+                    <span><a href="living.html"><strong>LIVING CONTENTS</strong></a></span>
+                    <a href="#"><img src="img/img_living1.jpg" alt="livingimg"></a>
+
+            </div>
+            <!-- <div class="sub2">
                 <h2><strong>LIVING</strong></h2>
                 <p><strong>FOOD_참치 제철 샐러드</strong>
                 재료(2인분) 동원참치 아이스큐브 1팩<br>
                 아스파라거스·방울토마토·금귤·오렌지 적당량<br>
                 드레싱_올리브유·레몬즙 2큰술
                 </p>
-                <span><a href="living.html"><strong>LIVING CONTENTS</strong></a></span>
-                <div><a href="#"><img src="img/ic-ybar1.svg" alt="subicon">화살표</a></div>
+                <a href="#"><img src="img/img_living1.jpg" alt="livingimg"></a>
             </div>
-            <div class="right">
-                <figure>
+            <div class="sub3">
+                <h2><strong>LIVING</strong></h2>
+                <p><strong>FOOD_참치 제철 샐러드</strong>
+                재료(2인분) 동원참치 아이스큐브 1팩<br>
+                아스파라거스·방울토마토·금귤·오렌지 적당량<br>
+                드레싱_올리브유·레몬즙 2큰술
+                </p>
                 <a href="#"><img src="img/img_living1.jpg" alt="livingimg"></a>
-                <a href="#"><img src="img/img_living1.jpg" alt="livingimg"></a>
-                <a href="#"><img src="img/img_living1.jpg" alt="livingimg"></a>
-                    <p><a href="#"><img src="img/ic-ybar2.svg" alt="subicon">화살표</a></p>
-                </figure>
-            </div>
+            </div> -->
         </div>
+            <!-- <div class="sub-icon">
+                <div>
+                    <img src="img/ic-ybar1.svg" alt="subicon">
+                    <img src="img/ic-ybar2.svg" alt="subicon">
+                </div>
+            </div>   -->
+                
+       
+
+
+        <script type="text/javascript">
+  
+            $(".sub1 slider").slick({
+              arrows:false, /*false 화살표 사라짐*/
+              dots: true, /* false 인디게이터 사라짐*/
+              infinite: true,
+              slidesToShow: 1, // 화면에 보여지는 칸 수
+              slidesToScroll: 1, //슬라이드 움직이는 칸 수
+              autoplay:true, //자동슬라이드 _ 마우스올리면 멈춤.
+              autoplayspeed:400,
+              fade: true,
+              cssEase: 'linear'
+            });
+      </script>
+
+        
+
+
+
         <div class="container-3">
                 <h2><strong>STYLE</strong></h2>
                 <ul>
@@ -126,11 +210,12 @@
                     <li><a href="#"><img src="img/sub-1.jpg" alt="styleimg"></a></li>
                     <li><a href="#"><img src="img/sub-1.jpg" alt="styleimg"></a></li>
                 </ul>
-                <div class="sub-circle">
-                    <p><a href="#">동그라미</a></p>
-                    <p><a href="#">동그라미</a></p>
-                    <p><a href="#">동그라미</a></p>
-                </div>
+                
+                <aside>
+                    <a class="active">동그라미</a>
+                    <a>동그라미</a>
+                    <a>동그라미</a>
+                </aside>
                 <span>
                     <a href="style.html"><strong>STYLE CONTENTS</strong></a>
                 </span>
@@ -202,5 +287,13 @@
         </div>
     
     </footer>
+
+
+
+
+
+
+    
+
 </body>
 </html>

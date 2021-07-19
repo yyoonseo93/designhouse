@@ -3,7 +3,7 @@
 * {font-family: 'Open Sans',sans-serif,
     'Noto Sans KR', sans-serif;}
 
-html,body{margin: 0;}
+html,body{margin: 0; padding: 0;}
 ul,li,ol{
     list-style-type: none;
     margin:0;
