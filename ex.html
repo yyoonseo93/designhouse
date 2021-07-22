@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-2">
+        <div class="con-sub1">
+            <div class="left">
+                <h2><strong>LIVING</strong></h2>
+                <p>
+                    <strong>FOOD_참치 제철 샐러드</strong>
+                    재료(2인분) 동원참치 아이스큐브 1팩<br>
+                    아스파라거스·방울토마토·금귤·오렌지 적당량<br>
+                    드레싱_올리브유·레몬즙 2큰술
+                </p>
+                <a href="living.html"><strong>LIVING CONTENTS</strong></a>
+            </div>
+            <div class="right">
+                <a class="Img" href="living.html"><img src="img/img_living1.jpg" alt="livingimg"></a>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .container-2{
+            background-color: #fffde7;
+            width: 90%; height: 600px;
+            margin-left: 10%;
+        }
+        .container-2 .left{
+            float: left;
+            width: 50%;
+            margin:0; padding: 30px;
+            text-align: end;
+        }
+        .container-2 .left h2{
+            color: rgb(240,202,15);
+            opacity:40%;
+        }
+        .container-2 .left h2 strong{
+            font-weight: 800;
+            font-size:6em;
+        }
+        .container-2 .left p{
+            color: rgb(97,88,86);
+            font-size: 1.2em;
+            line-height: 2;
+            margin-top: 30px;
+        }
+        .container-2 .left p strong{
+            font-size: 1.2em;
+            display: block;
+        }
+        .container-2 .left a{
+            color: #fff;
+            font-size: 1.2em;
+            background-color: rgb(240,202,15);
+            padding:5px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .container-2 .left a::after{
+            content:''; clear: both; display:inline-block;
+            width:0; height:0;
+            border: 8px solid transparent;
+            border-left-color: #fff;
+            vertical-align: middle;
+            margin-left:10px;
+        }
+        .container-2 .right{
+            float: right;
+            width:450px; height: 450px;
+            margin-top: 5%;
+            margin-right: 10%;
+            overflow: hidden;
+        }
+        .container-2 .right a img{width: 100%;}
+    </style>
+</body>
+</html>

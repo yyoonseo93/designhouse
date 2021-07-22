@@ -112,9 +112,8 @@ header{
 .head nav{}
 .head nav a{
     display: inline-block;
-    font-weight: 600;
-    font-size:1.1em;
-    margin: 0 2vw;
+    font-size:1em;
+    margin: 0 3vw;
     color: rgb(121, 109, 109);
 }
 .head nav a:hover{
