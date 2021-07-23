@@ -1,22 +1,25 @@
 {
-    "container-2" : [
+    "container2" : [
         {
             "logo" : "LIVING",
-            "detail" : "안목 있는 공예 숍\n이색적인 공예 작품을 소개하는 편집매장\n ‘피노크’가 가게와 꼭 닮은 \n자유로운 성수 거리에 터를 잡았다.",
-            "link" : "LIVING CONTENTS",
-            "img" : "img/img_living1.jpg"
-        },
-        {
-            "logo" : "LIVING",
-            "detail" :"들기름표고버섯면\n표고버섯으로 반죽한 표고버섯면과 고소한 들기름!\n국산 콩간장과 유기농 현미식초로 만든\n 간장 소스까지 포함",
-            "link" : "LIVING CONTENTS",
-            "img" : "img/living10.jpg"
-        },
-        {
-            "logo" : "LIVING",
-            "detail" : "여의도의 새로운 여행지\n새로운 공간을 탐험하는 일은 마치\n여행을 떠난 듯 영감을 불러일으킨다.\n더현대 서울의 관전 포인트를 소개한다. ",
+            "tit" : "여의도의 새로운 여행지",
+            "detail" : "새로운 공간을 탐험하는 일은 <br> 마치 여행을 떠난 듯 영감을 불러일으킨다. <br> 더현대 서울의 관전 포인트를 소개한다. ",
             "link" : "LIVING CONTENTS",
             "img" : "img/living11.jpg"
+        },
+        {
+            "logo" : "LIVING",
+            "tit" : "안목 있는 공예 숍",
+            "detail" : "이색적인 공예 작품을 소개하는 편집매장 <br> ‘피노크’가 가게와 꼭 닮은 <br> 자유로운 성수 거리에 터를 잡았다.",
+            "link" : "LIVING CONTENTS",
+            "img" : "img/living12.jpg"
+        },
+        {
+            "logo" : "LIVING",
+            "tit" : "들기름표고버섯면",
+            "detail" :"표고버섯으로 반죽한 표고버섯면과 고소한 들기름! <br> 국산 콩간장과 유기농 현미식초로 만든 <br> 간장 소스까지 포함",
+            "link" : "LIVING CONTENTS",
+            "img" : "img/living10.jpg"
         }
     ]
 }

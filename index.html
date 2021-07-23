@@ -25,6 +25,7 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <header></header>
@@ -75,43 +76,31 @@
             
         </div>
             
-        <script type="text/javascript">
-  
-            $(".slider").slick({
-              arrows:false, /*false 화살표 사라짐*/
-              dots: true, /* false 인디게이터 사라짐*/
-              infinite: true,
-              slidesToShow: 1, // 화면에 보여지는 칸 수
-              slidesToScroll: 1, //슬라이드 움직이는 칸 수
-              autoplay:true, //자동슬라이드 _ 마우스올리면 멈춤.
-              autoplayspeed:400,
-              fade: true,
-              cssEase: 'linear'
-            });
-        </script>
-
         <h2 class="logo"><strong>DESIGN HOUSE M+</strong></h2>
 
         <div class="container-2">
             <div class="con-sub1">
-                <div class="left">
-                    <h2><strong>LIVING</strong></h2>
-                    <p>
-                        <strong>여의도의 새로운 여행지</strong>
-                        새로운 공간을 탐험하는 일은<br>
-                        마치 여행을 떠난 듯 영감을 불러일으킨다.<br>
-                        더현대 서울의 관전 포인트를 소개한다.
-                    </p>
-                    <a href="living.html"><strong>LIVING CONTENTS</strong></a>
-                </div>
-                <div class="right">
-                    <a class="Img" href="living.html"><img src="img/living11.jpg" alt="livingimg"></a>
+                <div class="item">
+                    <div class="left">
+                        <!-- <h2><strong>LIVING</strong></h2>
+                        <p>
+                            <strong>여의도의 새로운 여행지</strong>
+                            새로운 공간을 탐험하는 일은<br>
+                            마치 여행을 떠난 듯 영감을 불러일으킨다.<br>
+                            더현대 서울의 관전 포인트를 소개한다.
+                        </p>
+                        <a href="living.html"><strong>LIVING CONTENTS</strong></a> -->
+                    </div>
+                    <div class="right">
+                        <!-- <a class="Img" href="living.html"><img src="img/living11.jpg" alt="livingimg"></a> -->
+                    </div>
                 </div>
             </div>
-            <aside>
-                <a class="arrowleft"><img src="img/ic-ybar1.svg"></a>
-                <a class="arrowright"><img src="img/ic-ybar2.svg"></a>
+            <aside class="button">
+                <a><img src="img/ic-ybar1.svg"></a>
+                <a><img src="img/ic-ybar2.svg"></a>
             </aside>
+            
         </div>
 
         <div class="container-3">
@@ -138,25 +127,21 @@
             </div>
             <ul class="subimg">
                 <li>
-                    <a href="#"><img src="img/sub-2.jpg" alt="cultureimg"></a>
-                    <p><a href="#">+</a></p>
+                    <a href="culture.html"><img src="img/culture10.jpg" alt="cultureimg"></a>
+                    <p>내일의 지구를 위한 책</p>
+                    <a class="btn" href="culture.html">'CULTURE CONTENTS'<br>View More</a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/sub-2.jpg" alt="cultureimg"></a>
-                    <p><a href="#">+</a></p>
+                    <a href="culture.html"><img src="img/sub-2.jpg" alt="cultureimg"></a>
+                    <p>힙하게 건져 올린 전통</p>
+                    <a class="btn" href="culture.html">'CULTURE CONTENTS'<br>View More</a>
                 </li>
                 <li>
-                    <a href="#"><img src="img/sub-2.jpg" alt="cultureimg"></a>
-                    <p><a href="#">+</a></p>
+                    <a href="culture.html"><img src="img/culture11.jpg" alt="cultureimg"></a>
+                    <p>말하자면 길지만</p>
+                    <a class="btn" href="culture.html">'CULTURE CONTENTS'<br>View More</a>
                 </li>
-                <li>
-                    <a href="#"><img src="img/sub-2.jpg" alt="cultureimg"></a>
-                    <p><a href="#">+</a></p>
-                </li>
-                <li>
-                    <a href="#"><img src="img/sub-2.jpg" alt="cultureimg"></a>
-                    <p><a href="#">+</a></p>
-                </li>
+                
             </ul>
         </div>
 
