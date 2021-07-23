@@ -139,8 +139,8 @@
     font-size: 5rem;
 } */
 
+/*container-1*/
 
-/* 인디게이터 ul li button */
 .slick-dots{
     position: absolute;
     right: 10%; top:50%;
@@ -161,9 +161,6 @@
     background-color: rgb(240,202,15);
     width: 10px; height:250px;
 }  
-
-
-
 /* 슬라이드 (이미지,좌우버튼,인디게이터) */
 .slider{
     width: 100%; height: 600px;
@@ -172,3 +169,29 @@
     margin-top: 62px;
 }
 .slick-list img{width: 100%;}
+
+
+
+/*container-3*/
+.conSub .slick-dots{
+    display: flex;
+    position: absolute;
+    right:0%; top:80%;
+    transform: translateY(-50%);
+    list-style: none;
+}
+.conSub .slick-dots li button{
+    
+    background-color: #fff;
+    border: none;
+    width: 10px; height: 10px;
+    border-radius: 10px;
+    font-size:0; 
+    margin:5px;
+    padding: 0;
+}  
+
+.conSub .slick-dots li.slick-active button{
+    background-color: rgb(240,202,15);
+    width: 250px; height:10px;
+}  
