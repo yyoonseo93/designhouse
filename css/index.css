@@ -26,7 +26,7 @@
     margin-bottom: 10px;
     text-shadow: 0.8px 0.8px 1px rgb(192, 162, 12);
 }
-.container-1 a img{transform: translateY(-15%);}
+.container-1 a img{transform: translateY(-5%);}
 
 /* h2 */
 .logo::before{
@@ -499,6 +499,7 @@ position: relative;
         margin:150px auto;
     }
     .container-4 div{
+        width: 100%;
         text-align: center;
     }
     .container-4 div h2{
