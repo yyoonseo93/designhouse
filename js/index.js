@@ -1,6 +1,15 @@
 
 function init(){
 //start
+const menuTri = document.querySelector('.menu-trigger'); //span3개
+const menuNav = document.querySelector('.menu-burg'); //메뉴팝업
+
+menuTri.addEventListener('click',function(){
+    this.classList.toggle('active');
+    menuNav.classList.toggle('active');
+    
+});
+ //container-2
   const conSub1 = document.querySelector('.con-sub1');
   const button = document.querySelectorAll('.button a');
   
@@ -39,7 +48,7 @@ function init(){
       conSub1.style = `transform:translateX(${-con}px)`; 
     });
   }
-
+//container-1 slider
   $(".slider").slick({
     arrows:false, /*false 화살표 사라짐*/
     dots: true, /* false 인디게이터 사라짐*/
@@ -63,29 +72,18 @@ function init(){
       }
     ]
   });
-
+//container-2 slider
   $(".conSub slider").slick({
     arrows:false, /*false 화살표 사라짐*/
-    dots: true, /* false 인디게이터 사라짐*/
+    dots: false, /* false 인디게이터 사라짐*/
     infinite: true,
     slidesToShow: 1, // 화면에 보여지는 칸 수
     slidesToScroll: 1, //슬라이드 움직이는 칸 수
     autoplay:true, //자동슬라이드 _ 마우스올리면 멈춤.
-    autoplayspeed:400,
+    autoplayspeed:300,
     fade: true,
     cssEase: 'linear',
-    responsive: [
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-          arrows:false
-        }
-      }
-    ]
+    
     
   });
 

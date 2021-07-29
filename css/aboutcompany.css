@@ -19,7 +19,7 @@
     font-size: 1.5em;
     margin: 0 2vw;
 }
-.container-2 ul li a strong:hover{
+.container-2 ul li:nth-of-type(1) a strong{
     color: rgb(240,202,15);
     border-bottom: 2px solid rgb(240,202,15);
 }
