@@ -7,19 +7,17 @@
 /* container-1*/
 .container-1 .main-text{
     position: absolute;
-    width:450px;
+    width:450px; height: 300px;
     padding: 20px;
     top:20%; left:8%;
     word-break: keep-all;
 }
 .container-1 .main-text p{
-    padding: 10px;
     color: #fff;
     line-height: 2;
     text-shadow: 0.8px 0.8px 1px rgb(70, 70, 70);
 }
-.container-1 .main-text p strong{
-    display: block;
+.container-1 .main-text h2{
     font-size: 2.4em;
     line-height: 2;
     color: rgb(240,202,15);
@@ -127,10 +125,10 @@
 
 /* container-3 */
 .container-3{
-background-color: #cccab5;
-width: 90%; height: 300px;
-margin-top:550px;
-position: relative;
+    background-color: #cccab5;
+    width: 90%; height: 300px;
+    margin-top:550px;
+    position: relative;
 }
 .container-3 h2{
     position: absolute;
@@ -154,7 +152,6 @@ position: relative;
 }
 .container-3 .conSub a img{
     width: 100%; height: 100%;
-    
 }
 .container-3 .conSub a img:nth-of-type(1){
     float: left;
@@ -282,28 +279,21 @@ position: relative;
 
 /* media container-1 */
 @media(min-width: 360px) and (max-width: 767px){
-    .container-1{
-        width: 100%; height:160px;
-        overflow: hidden;
-        margin: 80px 0 0 0;
-        position: relative;
-    }
     .container-1 .main-text{
-        background-color: rgba(255,255,255,0.8);
         position: absolute;
-        bottom:10%; left:5%;
-        padding:10px;
+        width:450px;
+        top:15%; left:4%;
     }
     .container-1 .main-text p{
-        color: rgb(70,60,60);
-        font-size: 0.4em;
-        line-height: 1.8;
+        font-size: 0;
     }
-    .container-1 .main-text p strong{
-        display: block;
-        font-size:2em;
+    .container-1 .main-text h2{
+        width: 100%; height: 100%;
+        font-size: 1.6em;
+        line-height: 0;
         color: rgb(240,202,15);
-        line-height: 2;
+        margin: 50px;
+        text-shadow: 0.8px 0.8px 1px rgb(192, 162, 12);
     }
     .container-1 .main-circle{
         position: absolute;
@@ -342,85 +332,64 @@ position: relative;
 /* media container-2 */
 
 @media(min-width: 360px) and (max-width: 767px){
-    .con-sub1{
-        background-color: rgb(242, 240, 240);
-        width:100%; height:500px;
-        display: block;
-        justify-content:flex-start;
-        margin-left:0;
-        position: relative;
-        
+    .container-2{
+        background-color: #fffde7;
+        width: 100%; height:600px;
+        margin: 0;
+        position: relative; overflow:hidden;
     }
-    .con-sub1 .left{
-        width:100%;
-        padding:0 5%;
-        text-align:left;
+    .container-2 .left{
+        float: none;
+        width: 100%; height:55%;
+        margin:0 35px; padding:20px;
+        text-align: start;
     }
-    .con-sub1 .left h2{
-        color: rgb(240,202,15);
-        opacity:40%;
-        margin-left: 5%;
-    }
-    .con-sub1 .left h2 strong{
+    .container-2 .left h2 strong{
         font-weight: 800;
         font-size:3em;
     }
-    .con-sub1 .left p{
+    .container-2 .left p{
         color: rgb(97,88,86);
-        margin: 0 0 3% 7%;
-        font-size: 0.5em;
-        line-height: 1.5;
+        font-size: 0.6em;
+        line-height: 2;
+        margin:10px 0;
+        word-break: keep-all;
     }
-    .con-sub1 .left p strong{
-        font-size:2em;
-        display: block;
-        margin-bottom:10px;
-    }
-    .con-sub1 .left span a{
+    .container-2 .left a{
         color: #fff;
-        font-size:0.5em;
+        font-size: 0.8em;
         background-color: rgb(240,202,15);
-        padding:4px 10px;
-        border-radius:20px;
-        margin: 0 0 0 7%;
+        padding:5px 10px;
+        border-radius: 20px;
+        text-decoration: none;
     }
-    .con-sub1 .left span a::after{
+    .container-2 .left a::after{
         content:''; clear: both; display:inline-block;
         width:0; height:0;
-        border: 4px solid transparent;
+        border: 8px solid transparent;
         border-left-color: #fff;
         vertical-align: middle;
         margin-left:10px;
     }
-    .con-sub1 .left div{
-        display: none;
-        position: absolute;
-        left:5%; top: 50%;
-        font-size: 0;
-    }
-    .con-sub1 .right{
-        width:100%;
-    }
-    .con-sub1 .right figure{
-        display: flex;
-        height:50%;
-        justify-content: center;
-        align-items: center;
+    .container-2 .right{
+        display:block;
+        width:250px; height:250px;
+        margin: 0 auto;
         overflow: hidden;
-
-        position: absolute;
-        left: 0; top:45%;
     }
-    .con-sub1 .right a{
-        width: 70%;
-        margin:0 2%;
-        flex-shrink: 0;
+    .container-2 .right a img{
+        width: 100%; height: 100%;
+        object-fit: cover;
     }
-    .con-sub1 .right p{
-        display: none;
+    .container-2 .button a:nth-child(1){
         position: absolute;
-        right:8%; top:50%;
-        font-size: 0;
+        left:5%; top:65%;
+        width: 30px; height: 50px;
+    }
+    .container-2 .button a:nth-child(2){
+        position: absolute;
+        right:5%; top:65%;
+        width: 30px; height: 50px;
     }
 }
 
@@ -428,117 +397,76 @@ position: relative;
 
 @media(min-width: 360px) and (max-width: 767px){
     .container-3{
-        background-color: rgb(240,202,15);
-        width:100%; height:200px;
-        margin-top:300px;
-        position: relative;
+        width: 100%; height: 300px;
+        margin-top:400px;
     }
     .container-3 h2{
-        position: absolute;
-        left:5%; bottom:0%;
-        transform: none;
-        transform-origin: none;
+        left:30px; bottom:80px;
+        transform: rotate(0) translateY(0);
+        transform-origin: 0;
     }
     .container-3 h2 strong{
-        font-weight: 800;
-        font-size:3.2em;
-        color: rgb(242,240,230);
+        font-size:3em;
     }
-    .container-3 ul{
-        width:90%; height:250px;
-        left: 0; bottom:70%;
-        position: absolute;
-        margin:0 5%; padding:0;
+    .container-3 .conSub{
+        width:100%; height:330px;
+        right:0; bottom:230px;
     }
-    .container-3 ul li:nth-of-type(1){
-        width: 60%; height: 100%;
+    .container-3 .conSub a img:nth-of-type(1){
+        float: left;
+        width:70%; height: 100%;
+        object-fit: cover; 
     }
-    .container-3 ul li:nth-of-type(2),
-    .container-3 ul li:nth-of-type(3){
-        width: 38%; height:30vw;
-        margin: 0 0 2% 2%;
-    }
-    .container-3 .sub-circle{
-        display: flex;
-        position: absolute;
-        right:5%; bottom:70%;
-    }
-    .container-3 .sub-circle p{
-        background-color:rgb(212, 212, 212);
-        width: 6px; height: 6px;
-        border-radius: 3px;
-        margin: 3px;
-        font-size: 0;
+    .container-3 .conSub a img:nth-of-type(2),
+    .container-3 .conSub a img:nth-of-type(3){
+        float: right;
+        width: 25%; height:45vw;
+        margin: 0 0 12px 10px;
     }
     .container-3 span{
         position: absolute;
-        left:5%; bottom:55%;
+        left:30px; bottom:40px;
     }
     .container-3 span a strong{
-        color: #fff;
-        font-size: 0.5em;
-        border: 2px solid #fff;
-        padding:4px 10px;
-        border-radius: 20px;
+        font-size: 1em;
     }
-    .container-3 span a strong::after{
-        content: ''; clear: both; display: inline-block;
-        width: 0; height: 0;
-        border: 4px solid transparent;
-        border-left-color: #fff;
-        vertical-align: middle;
-        margin-left: 10px;
-    }
+        
 
 }
 /* media container-4 */
 
 @media(min-width: 360px) and (max-width: 767px){
+    
     .container-4{
-        width:100%; height:400px;
-        margin:150px auto;
+        width: 100%; height: 100%;
+        margin: 130px auto;
     }
     .container-4 div{
-        width: 100%;
-        text-align: center;
+        margin-right:20px;
     }
     .container-4 div h2{
-        display:block;
-        color: rgb(240,202,15);
-        opacity:40%;
-        padding-bottom:5px;
+        margin-bottom: 20px;
     }
     .container-4 div h2 strong{
-        font-size:3em;
-        font-weight: 800;
+        font-size:2.5em;
     }
     .container-4 div a strong{
-        color: #fff;
-        font-size:0.5em;
-        background-color: rgb(240,202,15);
-        padding: 4px 10px;
-        border-radius: 20px;
-    }
-    .container-4 div a strong::after{
-        content: ''; clear: both; display: inline-block;
-        width: 0; height: 0;
-        border: 4px solid transparent;
-        border-left-color: #fff;
-        vertical-align: middle;
-        margin-left: 10px;
+        font-size:1em;
     }
     .container-4 ul{
         width: 100%;
         display: flex;
-        justify-content: center;
-        overflow: hidden;
-        padding: 0;
-        margin-top:30px;
+        flex-direction: column;
+        margin-left: 0;
     }
     .container-4 ul li{
-        width:70%;
-        margin-left:20px;
-        position: relative;
-        flex-shrink: 0;
+        width: 100%; height: 350px;
+        margin-left:0;
+        margin-bottom:80px;
+    }
+    .container-4 ul li:nth-child(1),
+    .container-4 ul li:nth-child(3){margin-right: 0;}
+    .container-4 ul li p{
+        margin-right:20px;
     }
 }

@@ -5,7 +5,7 @@ function init(){
   const button = document.querySelectorAll('.button a');
   
   let res,tagList='',tagList2='',idx=0,num=0;
-  fetch('./js/data.json')
+  fetch('./json/data.json')
     .then(res => res.json())
     .then(data => callback(data));
 
@@ -49,7 +49,19 @@ function init(){
     autoplay:true, //자동슬라이드 _ 마우스올리면 멈춤.
     autoplayspeed:400,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows:false
+        }
+      }
+    ]
   });
 
   $(".conSub slider").slick({
@@ -61,7 +73,20 @@ function init(){
     autoplay:true, //자동슬라이드 _ 마우스올리면 멈춤.
     autoplayspeed:400,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows:false
+        }
+      }
+    ]
+    
   });
 
 //end

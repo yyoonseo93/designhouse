@@ -58,7 +58,7 @@
 
 /* container-4 */
 .container-4{
-    width:80%;
+    width:80%; height:600px;
     margin:10vw auto;
 }
 .container-4 ul{
@@ -70,14 +70,14 @@
 }
 .container-4 ul li{
     background-color: rgb(240,202,15);
-    width:33%; height:350px;
+    width:33%; height:300px;
     margin-bottom:4px;
 }
 .container-4 ul li:nth-of-type(2n){
     background-color: #cccab5;
 }
 .container-4 ul li h2{
-    font-size:5em;
+    font-size:4em;
     color: #fff;
     opacity:60%;
     text-align: center;
@@ -106,7 +106,7 @@
 .container-4 ul li p strong{
     color: #fff;
     font-size: 1.2em;
-    line-height:3;
+    line-height:2.5;
 }
 
 /* container-5 */
@@ -181,6 +181,7 @@
     .container-3{
         width:80%;
         margin:0 auto;
+        margin-bottom:100px;
     }
     .container-3 h2::before{
         content: ''; clear: both; display: block;
@@ -218,11 +219,11 @@
 
 @media(min-width: 360px) and (max-width: 767px){
     .container-4{
-        width:100%;
-        margin:10vw auto;
+        width:100%; height: 100%;
+        margin:100px auto;
     }
     .container-4 ul{
-        width: 100%;
+        width: 100%; 
         margin: 0; padding: 0;
         display: block;
         flex-wrap: wrap;
@@ -267,8 +268,7 @@
 @media(min-width: 360px) and (max-width: 767px){
     .container-5{
         width:100%;
-        margin-left:0%;
-        margin-bottom:20vw;
+        margin:100px 0;
         display: block;
     }
     .container-5 .left{ 
@@ -276,8 +276,10 @@
     }
     .container-5 .left h2{
         color: rgb(240,202,15);
-        font-size:2.8em;
-        text-align: end;
+        font-size:2em;
+        text-align: start;
+        margin-left: 30px;
+        padding:10px 0;
     }
     .container-5 .right{
         width:100%; height:40%;
