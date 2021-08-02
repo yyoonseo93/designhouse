@@ -61,7 +61,7 @@ menuTri.addEventListener('click',function(){
     cssEase: 'linear',
     responsive: [
       {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -83,8 +83,18 @@ menuTri.addEventListener('click',function(){
     autoplayspeed:300,
     fade: true,
     cssEase: 'linear',
-    
-    
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          arrows:false
+        }
+      }
+    ]  
   });
 
 //end
