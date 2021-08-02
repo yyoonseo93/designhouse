@@ -1,11 +1,9 @@
 @charset "utf-8";
 @import url('common.css');
 
-
 /* container-1 */
 .container-1 a img{
-    width: 100%;
-    transform: translateY(-30%);
+    transform: translateY(-70%);
 }
 /* container-2 */
 .container-2 ul{
@@ -20,12 +18,13 @@
     font-size: 1.5em;
     margin: 0 2vw;
 }
-.container-2 ul li:nth-of-type(2) a strong{
+.container-2 ul li:nth-of-type(3) a strong{
     color: rgb(240,202,15);
     border-bottom: 2px solid rgb(240,202,15);
 }
 /* container-3 */
 .container-3{
+    background: #cccab5;
     width: 60%; height: 350px;
     margin: 0 auto; padding: 40px;
 }
@@ -41,7 +40,7 @@
     display: flex;
 }
 .container-3 .con div img{
-    width: 35%; margin-left: 20px;
+    width: 40%;
 }
 .container-3 .con div .text{
     display: flex; flex-direction: column;
@@ -50,8 +49,9 @@
     width: 50%;
 }
 .container-3 .con div h2{
-    color: rgb(240,202,15);
+    color: #fff;
     font-size:2.2em;
+    line-height: 2;
     word-break: keep-all;
 }
 .container-3 .con div p{
@@ -61,52 +61,64 @@
     line-height: 2;
 }
 .container-3 .con div p:nth-of-type(2){
-    color: rgb(126, 126, 126);
+    color: #fff;
     font-weight: 600;
     font-size:1em;
 }
-/* container-4 */
+
+/*.container-4 */
 .container-4{
-    width:80%; margin: 150px auto;
+    width: 80%; padding: 50px;
+    margin:150px auto;
+    overflow: hidden;
+    display: flex; flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .container-4::after{
     content: ''; clear: both; display: block;
-    width: 100%; margin:8vw 0;
+    width: 100%; margin:4vw 0;
     border-bottom: 2px solid #cccab5;
 }
-.container-4 .con4{
-    width:80%; margin: 0 auto;
-}
-.container-4 .con4 > div{
-    width: 100%; height: 300px;
-    margin-bottom: 30px;
+.container-4 > div{
+    width: 48%; 
+    position: relative;
+    height: 500px;
     overflow: hidden;
-    display: flex;
+    margin-bottom: 50px;
 }
-.container-4 .con4 > div img{
-    width:400px; height: 400px;
+.container-4 > div img{
+    width: 100%;
 }
-.container-4 .con4 > div > .text{
-    width: 80%;
-    padding: 30px; word-break: keep-all;
-    background: #cccab5;
+.container-4 > div:hover .text{
+    opacity: 1;
 }
-.container-4 .con4 > div > .text h2{
-    word-break: keep-all;
-    font-size: 1.6em;
-    margin-bottom: 20px;
+.container-4 > div .text{
+    width: 100%; height:250px;
+    padding: 40px;
+    position: absolute;
+    left: 0; bottom: 0;
+    background-color: rgb(240,202,15);
+    text-align: center;
+    opacity: 0;
+}
+.container-4 > div .text h2{
     color: #fff;
+    line-height: 2.2;
 }
-.container-4 .con4 > div > .text p{
-    font-size: 1em; line-height:2;
-    color: rgb(82, 82, 82);
-}
-.container-4 .con4 > div > .text p small{
-    color:#fff; font-weight: 600;
-    font-size: 1em;
+.container-4 > div .text p{
+    color: #fff;
+    word-break: keep-all;
     line-height:2;
 }
-
+.container-4 > div .text p strong{
+    display: block;
+    font-size: 1em;
+}
+.container-4 > div .text p small{
+    display: block;
+    line-height:2;
+}
 
 /* media container-2 */
 
@@ -127,10 +139,10 @@
 }
 
 /* media container-3 */
-
 @media(min-width: 360px) and (max-width: 767px){
     .container-3{
-        width: 100%; height: 400px;
+        background: #cccab5;
+        width: 100%; height: 380px;
         margin: 0 auto; padding: 20px;
     }
     .container-3 .con div{
@@ -139,17 +151,17 @@
         display: flex; flex-direction: column;
     }
     .container-3 .con div img{
-        width: 70%; margin: 0 auto;
+        width: 80%; margin: 0 auto;
     }
     .container-3 .con div .text{
         display: flex; flex-direction: column;
-        padding: 0; margin-top:20px;
+        padding: 20px;
         text-align: center;
         width: 100%;
     }
     .container-3 .con div h2{
-        color: rgb(240,202,15);
-        font-size:1.2em;
+        color: #fff;
+        font-size:1.8em;
         line-height: 2;
         word-break: keep-all;
     }
@@ -159,48 +171,59 @@
         font-size:1em;
         line-height: 2;
     }
-    .container-3 .con div p:nth-of-type(2){
-        color: rgb(126, 126, 126);
-        font-weight: 600;
-        font-size:0.8em;
-    }
 }
 /* media container-4 */
 @media(min-width: 360px) and (max-width: 767px){
     .container-4{
-        width:100%; margin: 50px auto;
-    }
-    .container-4::after{
-        content: ''; clear: both; display: block;
-        width: 80%; margin:8vw auto;
-        border-bottom: 2px solid #cccab5;
-    }
-    .container-4 .con4{
-        width:100%; margin: 0;
-    }
-    .container-4 .con4 > div{
-        width: 100%; height: 100%;
-        margin-bottom: 20px;
+        width: 100%; padding:20px;
+        margin:100px auto;
         overflow: hidden;
-        display: flex; flex-direction: column;
+        display: flex; flex-shrink: 0;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .container-4 .con4 > div img{
-        width:400px; height: 400px;
+    .container-4 > div{
+        width: 80%; margin: 0 auto;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 50px;
     }
-    .container-4 .con4 > div > .text{
-        width: 100%;
-        padding: 20px;
-        word-break: keep-all;
-        background: #cccab5;
+    .container-4 > div .text{
+        width: 100%; height:100%;
+        padding: 30px;
+        position: absolute;
+        left: 0; bottom: 0;
+        background-color: rgb(240,202,15);
+        text-align: center;
+        opacity: 0;
     }
-    .container-4 .con4 > div > .text h2{
-        word-break: keep-all;
-        font-size: 1.2em;
-        margin-bottom: 10px;
+    .container-4 > div .text h2{
         color: #fff;
+        line-height:2.2;
+        font-size: 1.2em;
+        word-break: keep-all;
     }
-    .container-4 .con4 > div > .text p{
-        font-size: 0.8em; line-height:2;
-        color: rgb(82, 82, 82);
+    .container-4 > div .text p{
+        color: #fff;
+        word-break: keep-all;
+        line-height:2;
+        font-size: 0.8em;
+    }
+    .container-4 > div .text p strong{
+        display: block;
+        font-size: 1em;
+    }
+    .container-4 > div .text p small{
+        display: block;
+        line-height:1.5;
+        font-size: 0.8em;
     }
 }
+
+
+
+
+
+

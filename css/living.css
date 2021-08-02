@@ -2,7 +2,10 @@
 @import url('common.css');
 
 /* container-1 */
-
+.container-1 a img{
+    width: 100%;
+    transform: translateY(-30%);
+}
 /* container-2 */
 
 .container-2{}

@@ -8,8 +8,10 @@ function init(){
     .then(design => callback(design));
 
     function callback(design){
-        design.DESIGNTEXT.forEach(function(v,k){
-            if(localStorage.img < 3){
+        
+    design.DESIGNTEXT.forEach(function(v,k){
+            
+            if(localStorage.img == k){
                 v.forEach(function(v2,k2){
                     if(k2 == 0){
                         text = v2.text;
@@ -18,10 +20,9 @@ function init(){
                         img = v2.img;
                         tit = v2.tit;
                         detail = v2.detail;
-                        subList += `
-                                        <li> <img src="${img}">
-                                        <p><strong>${tit}</strong><br>${detail}</p>
-                                        </li>`;
+                        subList += `<li> <img src="${img}">
+                                    <p><strong>${tit}</strong><br>${detail}</p>
+                                    </li>`;
                     }
                 });
                 console.log(subList)
@@ -30,4 +31,4 @@ function init(){
         designtext.innerHTML = subList;
     }
 }
-window.onload = init;
+window.addEventListener('load',init);

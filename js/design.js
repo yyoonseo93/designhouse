@@ -1,3 +1,4 @@
+
 function init(){
     
     const designUl = document.querySelector('.container-3 ul');
@@ -13,10 +14,12 @@ function init(){
             designTab[i].addEventListener('click',function(e){
                 e.preventDefault();
                 localStorage.design = i; 
-                location.href = this.children[0].href;
+                location.href = designTab[i].children[0].href;
             })
         }
     }designTab();
+
+    
 
     let tagList='';
     let dataName = 'STYLE';
@@ -40,8 +43,8 @@ function init(){
                         </li>`;
         });
         designUl.innerHTML = tagList;
-        const img = document.querySelectorAll('.style li');        
-        
+
+        const img = document.querySelectorAll('.style li');  
         for(let i=0; i<img.length; i++){
             img[i].addEventListener('click',function(){
                 localStorage.img = i;
@@ -49,7 +52,7 @@ function init(){
         }
     }
 }
-window.onload = init;
+window.addEventListener('load',init);
 
 // init() 함수 실행 (곧바로 실행하고 싶을때 괄호()를 붙여요~~~)
 // onload = init   //온로드이벤트가 발생하면 실행하는 함수 init

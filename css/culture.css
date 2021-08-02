@@ -5,7 +5,7 @@
 
 .container-1 a img{
     width: 100%;
-    transform: translateY(-30%);
+    transform: translateY(-40%);
 }
 
 /* container-2 */
@@ -99,6 +99,11 @@
     .container-1{
         margin-top: 80px;
     }
+    .container-1 a img{
+        width: 100%;
+        transform: translateY(-30%);
+    }
+    
 }
 /* media container-2 */
 
