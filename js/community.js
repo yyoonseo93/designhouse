@@ -11,7 +11,7 @@ function community(){
             autoplayspeed:300,
             responsive: [
                 {
-                  breakpoint: 767,
+                  breakpoint: 480,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -33,7 +33,7 @@ function community(){
             autoplayspeed:300,
             responsive: [
                 {
-                  breakpoint: 767,
+                  breakpoint: 480,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -55,7 +55,7 @@ function community(){
             autoplayspeed:300,
             responsive: [
                 {
-                  breakpoint: 767,
+                  breakpoint: 480,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
