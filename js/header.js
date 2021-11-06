@@ -1,12 +1,1 @@
-function menu(){
-//menu-trigger
-
-    const menuTri = document.querySelector('.menu-trigger'); //span3개
-    const menuNav = document.querySelector('.menu-burg'); //메뉴팝업
-    menuTri.addEventListener('click',function(){
-        this.classList.toggle('active');
-        menuNav.classList.toggle('active');
-    });
-}
-window.addEventListener('load',menu);
-// window.onload = menu;
+function menu(){const e=document.querySelector(".menu-trigger"),t=document.querySelector(".menu-burg");e.addEventListener("click",(function(){this.classList.toggle("active"),t.classList.toggle("active")}))}window.addEventListener("load",menu);
